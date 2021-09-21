@@ -1,0 +1,26 @@
+[user]
+  name = "Pascal Precht"
+  email = "445106+PascalPrecht@users.noreply.github.com"
+  signingkey = 3017C135E0731E5A
+[commit]
+	gpgsign = true
+[gpg]
+  program = gpg
+[core]
+  autoctrl = input
+  whitespace = space-before-tab, trailing-space
+[merge]
+  conflictstyle = diff3
+[color]
+  ui = auto
+[alias]
+  l = log --decorate --abbrev-commit --graph --pretty=oneline -n 20
+  s = status -s
+  d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+  tags = tag -l
+  branches = branch -a
+  removes = remote -v
+  co = checkout
+  wip = !git add -u && git commit -m 'WIP SAVEPOINT'
+  wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+
