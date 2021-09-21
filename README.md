@@ -7,7 +7,8 @@ Here's what needs to be done to install this on a new system. For more complete 
 1. Create `dotfiles` alias:
 
 ```sh
-$ echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/projects/dotfiles/ --work-tree=$HOME'" >> $HOME/.bash_aliases
+$ echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/projects/dotfiles/ \
+  --work-tree=$HOME'" >> $HOME/.bash_aliases
 ```
 
 2. Add dotfiles project path to .gitignore on `$HOME`
@@ -34,14 +35,14 @@ From here on, use the `dotfiles` command to add, commit push etc. to the dotfile
 ---
 
 - [Installation](#installation)
-  - [Terminal](#configure-terminal)
-  - [Git](#install-git)
-    - [Setup signing key](#setup-signing-key)
-  - [Tmux](#install-tmux)
-  - [NeoVim](#install-neovim)
-    - [minpac](#install-minpac-plugin-manager)
-  - [Brave](#install-brave)
-    - [Brave Extensions](#install-brave-extensions)
+ - [Terminal](#configure-terminal)
+ - [Git](#install-git)
+  - [Setup signing key](#setup-signing-key)
+ - [Tmux](#install-tmux)
+ - [NeoVim](#install-neovim)
+  - [minpac](#install-minpac-plugin-manager)
+ - [Brave](#install-brave)
+  - [Brave Extensions](#install-brave-extensions)
 
 
 ## Installation
@@ -106,17 +107,14 @@ Then run `:call minpac#update()` inside Vim.
 
 ```sh
 sudo apt install apt-transport-https curl
-
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg \
+  https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-
 sudo apt update
-
 sudo apt install brave-browser
 ```
 
-#### Install Brave Extentions
+#### Install Brave Extensions
 
 1. [Unhook YouTube](https://chrome.google.com/webstore/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid)
 2. [Bitwarden](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb)
