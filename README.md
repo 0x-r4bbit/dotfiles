@@ -38,6 +38,7 @@ From here on, use the `dotfiles` command to add, commit push etc. to the dotfile
   - [Terminal](#configure-terminal)
   - [Git](#install-git)
     - [Setup signing key](#setup-signing-key)
+    - [Setup SSH key](#setup-ssh-key)
   - [Tmux](#install-tmux)
   - [NeoVim](#install-neovim)
     - [minpac](#install-minpac-plugin-manager)
