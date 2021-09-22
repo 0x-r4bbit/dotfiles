@@ -35,14 +35,15 @@ From here on, use the `dotfiles` command to add, commit push etc. to the dotfile
 ---
 
 - [Installation](#installation)
- - [Terminal](#configure-terminal)
- - [Git](#install-git)
-  - [Setup signing key](#setup-signing-key)
- - [Tmux](#install-tmux)
- - [NeoVim](#install-neovim)
-  - [minpac](#install-minpac-plugin-manager)
- - [Brave](#install-brave)
-  - [Brave Extensions](#install-brave-extensions)
+  - [Terminal](#configure-terminal)
+  - [Git](#install-git)
+    - [Setup signing key](#setup-signing-key)
+  - [Tmux](#install-tmux)
+  - [NeoVim](#install-neovim)
+    - [minpac](#install-minpac-plugin-manager)
+  - [Rust](#install-rust)
+  - [Brave](#install-brave)
+    - [Brave Extensions](#install-brave-extensions)
 
 
 ## Installation
@@ -70,6 +71,14 @@ Basically need to follow steps [here](https://docs.github.com/en/github/authenti
 2. [Add it to your GitHub account](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-new-gpg-key-to-your-github-account)
 3. [Tell Git your signing key](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)
 4. [Associate email with GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/associating-an-email-with-your-gpg-key)
+
+#### Setup SSH key
+
+Either use Personal Access Tokens or SSH keys to authenticate with GitHub. To set up SSH key, follow the these steps:
+
+1. [Generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+2. [Add SSH key to GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+3. [Test SSH connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
 
 ### Install Tmux
 
@@ -102,6 +111,18 @@ git clone https://github.com/k-takata/minpac.git \
 ```
 
 Then run `:call minpac#update()` inside Vim.
+
+### Install Rust
+
+```sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+Also need to install `build-essential`:
+
+```sh
+$ sudo apt install build-essential
+```
 
 ### Install Brave
 
