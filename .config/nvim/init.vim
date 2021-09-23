@@ -1,6 +1,8 @@
 let mapleader = ','
 let maplocalleader = ','
 
+let g:ale_linters = {'rust': ['analyzer']}
+
 scriptencoding utf-8
 set encoding=utf-8
 set mouse=
@@ -38,6 +40,7 @@ call minpac#add('tpope/vim-surround')
 call minpac#add('tpope/vim-repeat')
 call minpac#add('tpope/vim-commentary')
 call minpac#add('rust-lang/rust.vim')
+call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
 
 set guioptions=TlrLR
 set t_Co=256

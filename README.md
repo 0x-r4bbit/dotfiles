@@ -2,7 +2,7 @@
 
 These are my dotfiles.
 
-Here's what needs to be done to install this on a new system. For more complete instructions on setting up a new machine, head over to the [installation guide](#installation):
+Here's what needs to be done to install this on a new system. For more complete instructions on how I set up a new machine, head over to the [installation guide](#installation):
 
 1. Create `dotfiles` alias:
 
@@ -35,19 +35,30 @@ From here on, use the `dotfiles` command to add, commit push etc. to the dotfile
 ---
 
 - [Installation](#installation)
+  - [Gnome Tweaks](install-gnome-tweaks)
   - [Terminal](#configure-terminal)
   - [Git](#install-git)
     - [Setup signing key](#setup-signing-key)
     - [Setup SSH key](#setup-ssh-key)
   - [Tmux](#install-tmux)
+  - [NVM](#install-nvm)
   - [NeoVim](#install-neovim)
     - [minpac](#install-minpac-plugin-manager)
   - [Rust](#install-rust)
+  - [Rust Analyzer](#install-rust-analyzer)
   - [Brave](#install-brave)
     - [Brave Extensions](#install-brave-extensions)
 
 
 ## Installation
+
+### Install Gnome Tweaks
+
+```sh
+$ sudo apt install gnome-tweaks
+```
+
+Then, also turn off Ubuntu dock via extensions.
 
 ### Configure terminal
 
@@ -87,6 +98,14 @@ Either use Personal Access Tokens or SSH keys to authenticate with GitHub. To se
 $ sudo apt install tmux
 ```
 
+### Install NVM
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+```
+
+This is needed for `coc-rust-analyzer`.
+
 ### Install NeoVim
 
 ```sh
@@ -124,6 +143,17 @@ Also need to install `build-essential`:
 ```sh
 $ sudo apt install build-essential
 ```
+
+### Install Rust Analyzer
+
+```sh
+$ curl -L https://github.com/rust-analyzer/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > ~/.local/bin/rust-analyzer
+$ chmod +x ~/.local/bin/rust-analyzer
+```
+
+After that, add `$HOME/.local/bin` to your `PATH` in `.profile` or `.bashrc` if it's not done yet.
+To make this work in Vim, make sure to install `coc-rust-analyzer` and set the `rust-analyzer.server.path`.
+The Vim configurations of this repository have that already.
 
 ### Install Brave
 
