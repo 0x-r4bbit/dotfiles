@@ -117,3 +117,9 @@ nnoremap <C-l> <C-w>l
 cnoreabbrev q qall!
 cnoreabbrev Q qall!
 
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h') . '/' : '%%'
+
+augroup autoload_vimrc
+  au!
+  au BufWritePost $MYVIMRC so $MYVIMRC
+augroup END
