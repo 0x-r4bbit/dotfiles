@@ -48,6 +48,8 @@ From here on, use the `dotfiles` command to add, commit push etc. to the dotfile
   - [Rust Analyzer](#install-rust-analyzer)
   - [Brave](#install-brave)
     - [Brave Extensions](#install-brave-extensions)
+  - [Obsidian](#install-obsidian)
+    - [Setup obsidian vault](#setup-obsidian-vault)
 
 
 ## Installation
@@ -171,3 +173,21 @@ sudo apt install brave-browser
 1. [Unhook YouTube](https://chrome.google.com/webstore/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid)
 2. [Bitwarden](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb)
 
+### Install Obsidian
+
+First, go ahead and download the Obsidian snap from https://obsidian.md/download.
+Then, install the snap:
+
+```sh
+$ sudo snap install --dangerous path/to/snap/file
+```
+
+#### Setup Obsidian vault
+
+Clone the obsidian vault repository:
+
+```sh
+$ git clone https://github.com/PascalPrecht/.obsidian-vault.git
+```
+
+Then configure Obsidian to use that vault.
