@@ -36,6 +36,7 @@ From here on, use the `dotfiles` command to add, commit push etc. to the dotfile
 
 - [Installation](#installation)
   - [Gnome Tweaks](install-gnome-tweaks)
+  - [Gnome Sushi](install-gnome-sushi)
   - [Terminal](#configure-terminal)
   - [Git](#install-git)
     - [Setup signing key](#setup-signing-key)
@@ -61,6 +62,12 @@ $ sudo apt install gnome-tweaks
 ```
 
 Then, also turn off Ubuntu dock via extensions.
+
+### Install Gnome sushi
+
+```sh
+$ sudo apt install gnome-sushi
+```
 
 ### Configure terminal
 
