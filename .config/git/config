@@ -19,7 +19,7 @@
   d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
   tags = tag -l
   branches = branch -a
-  removes = remote -v
+  remotes = remote -v
   co = checkout
   wip = !git add -u && git commit -m 'WIP SAVEPOINT'
   wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
