@@ -38,6 +38,7 @@ From here on, use the `dotfiles` command to add, commit push etc. to the dotfile
   - [Gnome Tweaks](install-gnome-tweaks)
   - [Gnome Sushi](install-gnome-sushi)
   - [Terminal](#configure-terminal)
+  - [ProtonVPN](#install-protonvpn)
   - [Git](#install-git)
     - [Setup signing key](#setup-signing-key)
     - [Setup SSH key](#setup-ssh-key)
@@ -77,6 +78,22 @@ I use the following preferences on linux (Ubuntu) in the terminal:
 2. Custom terminal background color: #141617
 3. Palette built-in scheme: solarized
 4. Turn on "Show bold text in bright colors
+
+### Install ProtonVPN
+
+Download the latest DEB package from [here](https://protonvpn.com/support/linux-vpn-tool/).
+Then install it via `apt-get`:
+
+```sh
+$ sudo apt-get install path/to/dep/file
+```
+
+Then do
+
+```sh
+$ sudo apt update
+$ sudo apt install protonvpn-cli
+```
 
 ### Install Git
 
