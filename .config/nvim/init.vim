@@ -45,6 +45,7 @@ call minpac#add('tpope/vim-repeat')
 call minpac#add('tpope/vim-commentary')
 call minpac#add('rust-lang/rust.vim')
 call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
+call minpac#add('mileszs/ack.vim')
 
 set guioptions=TlrLR
 set t_Co=256
