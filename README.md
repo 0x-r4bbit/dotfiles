@@ -181,6 +181,20 @@ After that, add `$HOME/.local/bin` to your `PATH` in `.profile` or `.bashrc` if 
 To make this work in Vim, make sure to install `coc-rust-analyzer` and set the `rust-analyzer.server.path`.
 The Vim configurations of this repository have that already.
 
+Installing `coc-rust-analyzer` is done via (inside Vim):
+
+```
+:CocInstall coc-rust-analyzer
+```
+
+### Install Go Language Server Plugin
+
+Usinc `coc-vim` install `coc-go` via:
+
+```
+:CocInstall coc-go
+```
+
 ### Install Brave
 
 ```sh
