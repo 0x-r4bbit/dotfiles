@@ -27,5 +27,10 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 . "$HOME/.cargo/env"
 
+export GEM_HOME=$HOME/.gems
+
 PATH=$PATH:$HOME/.local/bin
-export PATH=$PATH:/usr/local/go/bin
+PATH=$PATH:/usr/local/go/bin
+PATH=$PATH:$GEM_HOME/bin
+export PATH
+
