@@ -3,3 +3,4 @@ alias g=git
 alias open=xdg-open
 alias vpn=protonvpn-cli
 alias cl=clear
+alias l="ls -lah -G"

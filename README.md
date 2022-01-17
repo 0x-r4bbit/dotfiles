@@ -52,6 +52,8 @@ From here on, use the `dotfiles` command to add, commit push etc. to the dotfile
     - [Brave Extensions](#install-brave-extensions)
   - [Obsidian](#install-obsidian)
     - [Setup obsidian vault](#setup-obsidian-vault)
+  - [Misc](#misc)
+    - [udev-rules](#udev-rules)
 
 
 ## Installation
@@ -230,3 +232,10 @@ $ git clone https://github.com/PascalPrecht/.obsidian-vault.git
 ```
 
 Then configure Obsidian to use that vault.
+
+### Misc
+
+#### udev-rules
+
+These are needed to make Ledger work with linux: [https://github.com/LedgerHQ/udev-rules](https://github.com/LedgerHQ/udev-rules).
+Download and run the script.
