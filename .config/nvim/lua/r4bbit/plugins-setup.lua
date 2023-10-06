@@ -27,7 +27,11 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim")
 	use("bluz71/vim-nightfly-guicolors")
+
+	-- colorschemes
 	use("nanotech/jellybeans.vim")
+	use("ellisonleao/gruvbox.nvim")
+
 	use("christoomey/vim-tmux-navigator")
 	use("szw/vim-maximizer")
 	use("tpope/vim-surround")
@@ -63,6 +67,9 @@ return packer.startup(function(use)
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
+
+	-- copilot
+	use("github/copilot.vim")
 
 	use({
 		"nvim-treesitter/nvim-treesitter",

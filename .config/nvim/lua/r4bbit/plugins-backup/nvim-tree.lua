@@ -11,12 +11,9 @@ return {
 
 		nvimtree.setup({
 			view = {
-				width = 35,
+				width = 60,
 			},
 			renderer = {
-				indent_markers = {
-					enable = true,
-				},
 				icons = {
 					glyphs = {
 						folder = {
@@ -42,9 +39,7 @@ return {
 		})
 
 		local keymap = vim.keymap
-		keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>")
-		keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>")
-		keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>")
-		keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>")
+		keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+		keymap.set("n", "<leader>er", ":NvimTreeRefresh<CR>")
 	end,
 }
